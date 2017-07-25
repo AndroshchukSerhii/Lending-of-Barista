@@ -1,0 +1,119 @@
+.program-container#nav1
+	.program__wrap.animated.mov(data-animation="bounceInRight")
+		+icon("star")
+		h2(class="program__title") Programs 
+		+icon("star")
+		p(class="program__descr") We share their experience and professional barista championships multiple winners
+	.program__course.animated.mov(data-animation="fadeIn")
+		.course__tab
+			button(class="tablinks" onclick="openTab(event, 'Basic')") Basic
+			button(class="tablinks" onclick="openTab(event, 'Premium')") Premium
+			button(class="tablinks" onclick="openTab(event, 'Platinum')") Platinum
+		#Basic.course__tabcontent.course__tab_active
+			.basic__sect1-wrap
+				img(src="assets/img/basic.jpg")
+			.basic__sect2-wrap
+				h3(class="sect2__title") Beginners Course
+				.basic__descr-wrap
+					span 
+						+icon("Forma2")
+					p Certificate
+				.basic__descr-wrap
+					span
+						+icon("Forma1")
+					p 240 minutes
+				.basic__coast
+					span 1 500usd
+				a(class="registr__botton" href="#")
+					.basic__registr Registration
+		#Premium.course__tabcontent
+			.basic__sect1-wrap.mov(data-animation="fadeIn")
+				img(src="assets/img/basic.jpg")
+			.basic__sect2-wrap
+				h3(class="sect2__title") Premium Course
+				.basic__descr-wrap
+					span 
+						+icon("Forma2")
+					p Certificate
+				.basic__descr-wrap
+					span
+						+icon("Forma1")
+					p 400 minutes
+				.basic__coast
+					span 2 500usd
+				a(class="registr__botton" href="#")
+					.basic__registr Registration
+		#Platinum.course__tabcontent
+			.basic__sect1-wrap
+				img(src="assets/img/basic.jpg")
+			.basic__sect2-wrap
+				h3(class="sect2__title") Platinum Course
+				.basic__descr-wrap
+					span 
+						+icon("Forma2")
+					p Certificate
+				.basic__descr-wrap
+					span
+						+icon("Forma1")
+					p 540 minutes
+				.basic__coast
+					span 3 500usd
+				a(class="registr__botton" href="#")
+					.basic__registr Registration
+	.program__column-wrap
+		.program__column.animated.mov(data-animation="bounceInLeft")
+			.program-col__title
+				h5 Provenance coffee and basic concepts:
+			ul(class="program-column__list")
+				li - Methods for collecting coffee berries
+				li - Chronicle of the spread of the coffee tree
+				li - What is coffee?
+				li - The structure of the coffee berry
+				li - Arabica and Robusta
+				li - Coffee Belt land
+				li - Fruiting coffee tree
+				li - Seven steps of the coffee plantation to the consumer
+				li - Breeding and hybridization of coffee tree
+		.program__column.animated.mov(data-animation="fadeIn")
+			.program-col__title
+				h5 coffee production technology:
+			ul(class="program-column__list")
+				li - Methods for collecting coffee berries
+				li - Processing collected berries
+				li - Calibration and sorting
+				li - Some methods of classification and labeling of coffee beans.
+				li - Formation of grade names.
+				li - Storage of green (not fried) Coffee
+		.program__column.animated.mov(data-animation="bounceInRight")
+			.program-col__title
+				h5 roasting Technology bean. and Stage types of roasting. 
+			ul(class="program-column__list")
+				li - The technology of roasting coffee beans.
+				li - Changes in the beans.
+				li - Stages and types of roasting.
+				li - Roasted coffee. Monosorta and hood.
+				li - Decaffeination of coffee
+				li - Flavoring
+				li - Storage roasted coffee
+		.program__tables-wrap
+			.parallax_layer2.parallax_layer
+				img(class="parallax__img1" src="assets/img/parallax1.png")
+			h5 The course also includes:
+			.animated.mov(data-animation="bounceInLeft")
+				table(class="program__tabl")
+					+tableRow(1, "Coffee machine and grinder - practice - types of coffee machines and coffee grinders.")
+					+tableRow(1, "What makes professional coffee machines and coffee grinders.")
+					+tableRow(0, "Main components of coffee machines and coffee-Lathes, autolathes. Their purpose")
+					+tableRow(0, "How to choose a coffee machine and coffee grinder")
+					+tableRow(0, "The structure of the machine. How to maintain, clean and customize coffee machine")
+					+tableRow(0, "The structure of the grinders. How to maintain, clean and customize coffee Molko")
+					+tableRow(1, "Making beverages - praktika- machines and espresso rules")
+					+tableRow(0, "Technology and regulations frothed milk")
+					+tableRow(0, "Terms of tasting coffee")
+					+tableRow(0, "Terms of preparation of standard drinks line: espresso, cappuccino, latte and others.")
+					+tableRow(0, "Latte Art - Features practice and the importance of Latte Art in business and the barista")
+					+tableRow(0, "1 views Latte Art - Pitching")
+					+tableRow(0, "2 views Latte Art - topping")
+					+tableRow(0, "3 views Latte Art - Etching")
+					+tableRow(0, "4 views Latte Art - chocolate chip stencils")
+	

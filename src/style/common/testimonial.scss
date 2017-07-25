@@ -1,0 +1,64 @@
+.testimonal__containe {
+	background: url('../img/bg1.jpg') 0 0 repeat;
+	padding: 35px 0 0;
+	background-size: contain;
+	overflow: hidden;
+}
+.item__partner {
+	width: 100%;
+	position:relative;
+	padding-bottom: 30px;
+	img {
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    width:100%;
+	    height:100%;
+	}
+}
+.item__partner-wrap {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+	img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+}
+.icon-fa {
+	position: absolute;
+	left: 90px;
+	top: 15px;
+	width: 30px;
+	height: 30px;
+	z-index: 677;
+}
+.item__parhner-info {
+	width: 52%;
+	text-align: center;
+	padding: 20px 0 0;
+	line-height: 2;
+	margin: 0 auto;
+}
+.item__part-desc {
+	font-size: 11px;
+}
+.slider-two {
+	.owl-next {
+		position: absolute;
+		top: 120px;
+		right: 140px;
+	}
+	.owl-prev {
+		position: absolute;
+		top: 120px;
+		left: 140px;
+	
+	}
+}
+.gallery__carusel {
+	padding-bottom: 60px;
+}

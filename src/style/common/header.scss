@@ -1,0 +1,240 @@
+$heraderHeight: 67px;
+$golden: #eab96a;
+
+.header__container {
+  background: url('../img/mas.png'),url('../img/heder.jpg');            
+  background-size: 100%, cover;
+  background-attachment: scroll,fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: 10% 100%;
+  height: 100%;
+  font-size: 10px;
+  overflow: hidden;
+}
+.header-wrap {
+  width: 100%;
+  position: fixed;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: $heraderHeight;
+  align-items: center;
+  font-family: "robotoregular";
+  z-index: 8888;
+}
+.header-wrap-fix {
+  background-color: rgba(0,0,0,0.6);
+  z-index: 99999;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  .header__logo {
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+  }    
+  .logo__wrap {
+    width: 60px;
+    height: 40px;
+  }  
+  .icon-logo {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }              
+}
+.header__logo {
+ display: flex;
+ color: white;
+ flex-grow: 1;
+ height: 100%;
+ align-items: flex-end;
+ justify-content: center;
+ font-size: 16px;
+}
+.logo__wrap {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 100px;
+}
+.header__nav {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  flex-grow: 5;
+  border-bottom: 1px solid #7d7b7a;
+}
+.header__item {
+  box-sizing: border-box;
+  line-height: $heraderHeight;
+  display: list-item;
+  height: 100%;
+  margin-left: 1.5%;
+  align-self: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style-type: disc;
+  padding: 0 20px 0 10px;
+  border-bottom: 3px solid rgba(1,2,3,0);
+  &:hover {
+    color: $golden;
+    border-bottom: 3px solid $golden;
+    transition: 0.5s;
+  }
+  &:first-child {
+    list-style-type: none;
+  }
+}
+.header__phone {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: flex-end;
+  padding-right: 30px;
+  align-self: center;
+  border-bottom: 1px solid #7d7b7a;
+  font-size: 12px;
+}
+.header__num {
+  padding: 20px 0;
+  align-self: center;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-decoration: none;
+  // font-weight: bold;
+  &:hover {
+    color: $golden;
+    transition: 0.5s;
+  }
+}
+.banner-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 135px 0 0 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  font-size: 16px;
+  transform-style: preserve-3d;
+}
+.banner__stars {
+  height: 100%;
+  width: 100px;
+  flex-basis: 100%;
+}
+.banner__text {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+.banner__title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px 0;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.banner-title__word {
+    color: $golden;
+}
+.banner__descr {
+  color: white;
+  padding: 10px 0;
+  height: 100%;
+}
+.banner__arrow {
+  flex-basis: 1;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 33px;
+}
+.banner__down {
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #f8f8f7;
+  color: $golden;
+  &:hover {
+    transition: 1s;
+    background-color: $golden;
+    .icon-arrow {
+      fill: white;
+    }
+  }
+}
+.icon{
+  &-logo {
+    position: relative;
+    width: 90px;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,45%);
+  }
+  &-arr-left {
+    height: 4px;
+    width: 20%;
+  }
+  &-arr-right {
+    height: 4px;
+    width: 20%;
+  }
+  &-stars {
+    width: 100%;
+    height: 10px;
+    padding: 5px 0;
+  }
+  &-twice-arrow {
+    height: 5px;
+    padding: 10px 0;
+  }
+  &-arrow {
+    display: inline-block;
+    fill: $golden;
+    width: 10px;
+    height: 10px;
+  }
+  &-star {
+    width: 10px;
+    height: 10px;
+    padding: 0px 15px;
+    fill: black;
+  }
+}
+.parallax_layer1 {
+  position: absolute;
+  width: 10%;
+  left: 80%;
+  bottom: 10%;
+}
+.parallax_layer2 {
+  position: absolute;
+  width: 30%;
+  top: -50%;
+  left: 180%;
+}
+.parallax_layer3 {
+  position: absolute;
+  width: 10%;
+  top:  -10%;
+  left: 0%;
+}
+.parallax_layer4 {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top:  80%;
+  left: 80%;
+}
+.parallax__img1 {
+  width: 100%
+}

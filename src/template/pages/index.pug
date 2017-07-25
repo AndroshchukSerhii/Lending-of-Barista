@@ -1,0 +1,12 @@
+extends ../_template
+include ../mixins
+block variables
+  - var title = 'Landing page'
+
+block content
+ .header__container
+  include ../common/_header
+ include ../common/_programs
+ include ../common/gallery
+ include ../common/testimonial
+ include ../common/footer

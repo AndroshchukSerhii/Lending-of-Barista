@@ -1,0 +1,15 @@
+mixin tableRow(chose,text)
+	tr(class="program-tabl__rows")
+		if(chose==1)
+			td 
+				span(class="table__chose1") &#10004
+			td= text
+		if(chose==0)
+			td 
+				span(class="table__chose2") &#10006
+			td= text
+
+mixin icon(name, mods)
+	- mods = mods || ''
+	svg(class="icon icon-" + name class=mods)
+		use(xlink:href="./assets/img/sprite.svg#" + name)
